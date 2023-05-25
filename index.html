@@ -1,74 +1,89 @@
 <!DOCTYPE html>
+<html>
+<head>
+  <title>Oh Data Fairy</title>
+  <style>
+    /* CSS styles for the blog layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-<html lang="en">
-    <head>
-        <script type="text/javascript">
-            var MSIE = navigator.appName == "Microsoft Internet Explorer"?true:false;
-            var NN = navigator.appName == "Netscape"?true:false;
-            var CH = navigator.appName == "Chrome"?true:false;
-            function blockMouseClick(evt)
-            {
-                if(MSIE && (event.button == 2)){
-                alert("Sorry, you cannot use right mouse button");
-                return false;
-                }
-                else if(NN && ((evt.which == 2) || (evt.which == 3))){
-                alert("Sorry, you cannot use right mouse button.");
-                return false;
-                }
-                else if(CH && ((evt.which == 2) || (evt.which == 3))){
-                alert("Sorry, you cannot use right mouse button.");
-                return false;
-                }
-            }
-            document.onmousedown=blockMouseClick;
-        </script>
-        <meta name="vieport" content="initial-scale=1 width=device-width">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-                <title>My Travel Curiosities</title>
-    </head>
-    <body>
-        <div class="header">My Travel Curiosities</div>
-        <div><p id="subheader">by Ania</p></div>
-        <div id="menu">
-            <a href="index.html" class="btn btn-outline-secondary tabindex="-1" role="button" aria-disabled="true">Home</a>
-            <a href="aboutme.html" class="btn btn-outline-secondary tabindex="-1" role="button" aria-disabled="true">About Me</a>
-            <a href="mytravels.html" class="btn btn-outline-secondary tabindex="-1" role="button" aria-disabled="true">My Travels</a>
-            <a href="contact.html" class="btn btn-outline-secondary tabindex="-1" role="button" aria-disabled="true">Contact</a>
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
 
-        </div>
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
 
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
 
-            <div class="subcontainer">
-            <h2>Sicilian Cannoli</h2>
-            <h4>It's a classic Italian pastry with a crisp shell and creamy, sweet ricotta filling. I can't resisit to give you a good recipe.</h4>
+    .article-thumbnail {
+      float: left;
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
 
-            <div class="row row-cols-2">
-                <div class="col-sm-5"><img src="pict/cannoli1.jpg" class="rounded" alt="..." width="370" height="420"></div>
-                <div class="coltext"><b>Ingredients</b>
-                    150g plain flour, 1 tbsp golden caster sugar, large pinch bicarbonate of soda, ½ tsp cinnamon, 1 tsp cocoa powder (optional), 30g butter, 1 egg, 50ml dry marsala or white wine, rapeseed oil or sunflower oil for deep-frying (see tip)
-                    50g dark chocolate, melted, handful pistachio kernels, finely chopped, icing sugar</br>                  <b>For the filling</b>
-                    250g ricotta, drained and beaten until fluffy, 100g mascarpone, 2 tbsp finely chopped candied peel
-                    2 tbsp icing sugar. You will also need cannoli moulds (available to buy online).</div>
-                <div class="coltext"><b>STEP 1</b>
-                    Tip the flour, sugar, bicarb, cinnamon and cocoa (if using) into a bowl with a pinch of salt. Add the butter and rub it into the dry ingredients until there are no more lumps. Mix the egg yolk and marsala and add this to the bowl, then mix the whole lot together and knead to a smooth dough. Wrap and rest in the fridge. (Can be made ahead and fried the next day.)
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Data</a></li>
+        <li><a href="#">Self-development</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                    <b>STEP 2</b>
-                    Fill a deep-fat fryer, wok or deep saucepan a third of the way up with oil. Cut the dough into pieces and, working one piece at a time, roll them out as thinly as you can – use a pasta machine if you have one. Heat the oil and keep an eye on it until it reaches 180C. Lay the dough out on a lightly floured surface and cut out circles about 11cm across. Wrap each one around a cannoli mould, using some of the egg white to stick the top edge down and they're ready for frying.
+  <section>
+    <div class="article-thumbnail">
+      <h2>Article 1</h2>
+      <p>Summary of article 1...</p>
+      <a href="#">Read More</a>
+    </div>
 
-                    <b>STEP 3</b>
-                    Deep-fry the cannoli (with their moulds) one at a time, making sure they cook all over. They should take about 45-60 seconds in all and should be visibly golden brown (keep cooking a little longer if they aren't) and the dough will bubble and blister. Carefully take each one out of the oil using the tongs and shake the cannoli off the mould very carefully onto kitchen paper. As you fry each one, make sure the oil stays at 180C at all times and doesn’t get any hotter. These will keep for 2-3 days in an airtight container.
+    <div class="article-thumbnail">
+      <h2>Article 2</h2>
+      <p>Summary of article 2...</p>
+      <a href="#">Read More</a>
+    </div>
 
-                <b>STEP 4</b>
-                    When the cannoli are cold, dip the end of each one into chocolate, then dip some of those into the pistachios. Leave to cool and harden. Beat the ricotta and mascarpone together, then stir in the candied peel and sugar. Spoon the mixture into a piping bag with a wide star nozzle and pipe it into the cannoli. Serve soon after filling.</br>Source: https://www.bbcgoodfood.com/recipes/cannoli</div>
-                <div class="col-sm-5"><img src="pict/cannoli2.jpg" class="rounded" alt="..." width="420" height="370"></div>
-              </div>
-            </div>
+    <div class="article-thumbnail">
+      <h2>Article 3</h2>
+      <p>Summary of article 3...</p>
+      <a href="#">Read More</a>
+    </div>
 
-<p id="footer">Copyright&#169; Ania. All rights reserved.</p>
-    </body>
-
+    <div class="clear"></div>
+  </section>
+</body>
 </html>
+
+
+
+
+
+
+
+
 
