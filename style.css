@@ -10,8 +10,8 @@ body {
 header {
     background-color: #ffffff;
     padding: 20px;
-    margin-bottom: 200px; /* Add margin-bottom for space */
-    font-size: 100px;
+    margin-bottom: 50px; /* Add margin-bottom for space */
+    font-size: 10px;
 }
 
 nav ul {
