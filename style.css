@@ -92,7 +92,7 @@ section#articles {
 
 @media (max-width: 576px) {
   .navbar-nav {
-    background-color: #ffffff;
+    background-color: #f5f8fa;
     margin-top: 10px;
   }
 
