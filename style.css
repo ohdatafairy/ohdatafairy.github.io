@@ -37,6 +37,7 @@ section#articles {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px; /* Add margin-top for space */
+    padding: 50px;
 }
 
 .article {
