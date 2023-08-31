@@ -36,7 +36,7 @@ section#articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 50px; /* Add margin-top for space */
+    margin-top: 500px; /* Add margin-top for space */
    
 }
 
